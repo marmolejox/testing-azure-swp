@@ -1,0 +1,240 @@
+/**
+    CTECH-S Header Styles
+
+    Author: Luis Gutiérrez <lguiterrez@mstecs.com>
+    Date: 12/05/2025
+
+    Table of Contents:
+        1. Base Styles
+        2. Header Structure
+        3. Navigation Elements
+        4. Language Selector
+        5. Responsive Breakpoints
+        6. Mobile Menu
+ */
+
+/* ======================
+        1. BASE STYLES
+   ====================== */
+
+@import url('../variable.css');
+
+/* ======================
+        2. HEADER STRUCTURE
+   ====================== */
+.ctechs-header {
+    background-color: #ffffff;
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.ctechs-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+/* Logo styles */
+.ctechs-header-logo {
+    display: block;
+}
+
+.ctechs-header-logo .logo-img {
+    height: 70px;
+    width: auto;
+    transition: height 0.3s ease;
+}
+
+/* ======================
+        3. NAVIGATION ELEMENTS
+   ====================== */
+.ctechs-header-menu {
+    display: block;
+}
+
+.menu-links {
+    display: flex;
+    list-style: none;
+    gap: 0.3rem;
+    margin: 0;
+    padding-left: 3rem;
+}
+
+.menu-item {
+    position: relative;
+}
+
+.menu-link {
+    color: var(--color-black-100);
+    text-decoration: none;
+    background-color: var(--color-gray-20);
+    display: inline-block;
+    font-size: 0.9rem;
+    padding: 2rem 3.5rem 1rem 1rem;
+    white-space: nowrap;
+    transition: background-color 0.3s ease;
+}
+
+.logo-button {
+    height: 20px;
+}
+
+.menu-link:hover {
+    background-color: #424242;
+    color: white;
+}
+
+.menu-link img {
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+}
+
+/* ======================
+        4. LANGUAGE SELECTOR
+   ====================== */
+.select-header-ctechs {
+    color: var(--color-black-100);
+    border: 0px;
+    text-decoration: none;
+    background-color: var(--color-gray-20);
+    display: inline-block;
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 2.2rem 3.5rem 1rem 1rem;
+    white-space: nowrap;
+    appearance: none;
+    transition: background-color 0.3s ease;
+}
+
+.select-header-ctechs:hover {
+    background-color: #424242;
+    color: white;
+}
+
+.select-header-ctechs option {
+    padding: 0.8rem 1rem;
+    background-color: var(--color-gray-20);
+    color: var(--color-black-100);
+    transition: background-color 0.2s ease;
+}
+
+.select-header-ctechs option:hover {
+    background-color: var(--color-gray-40) !important;
+    color: white;
+}
+
+.select-header-ctechs option:checked {
+    background-color: var(--color-gray-90);
+    color: white;
+    font-weight: 500;
+}
+
+.select-header-ctechs:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--color-gray-60);
+}
+
+/* ======================
+        5. MOBILE MENU TOGGLE
+   ====================== */
+.mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--color-gray-navbar);
+}
+
+/* ======================
+        6. RESPONSIVE BREAKPOINTS
+   ====================== */
+
+/* Tablet View (1024px) */
+@media screen and (max-width: 1024px) {
+    .ctechs-header-container {
+        padding: 0 1rem;
+    }
+
+    .menu-link {
+        padding: 0.8rem 1.2rem;
+        font-size: 0.9rem;
+    }
+
+    #language-select {
+        padding: 0.8rem 1.2rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Mobile View (768px) */
+@media screen and (max-width: 768px) {
+    .ctechs-header-logo .logo-img {
+        height: 60px;
+    }
+
+    .mobile-menu-toggle {
+        display: block;
+    }
+
+    .ctechs-header-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        padding: 1rem 0;
+        display: none;
+    }
+
+    .ctechs-header-menu.active {
+        display: block;
+    }
+
+    .menu-links {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0 1.5rem;
+    }
+
+    .menu-item {
+        width: 100%;
+    }
+
+    .menu-link {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 0.8rem 0;
+    }
+
+    #language-select {
+        width: 100%;
+    }
+}
+
+/* Small Mobile View (480px) */
+@media screen and (max-width: 480px) {
+    .ctechs-header-logo .logo-img {
+        height: 50px;
+    }
+
+    .ctechs-header {
+        padding: 0.7rem 0;
+    }
+
+    .menu-link {
+        font-size: 0.85rem;
+    }
+
+    #language-select {
+        font-size: 0.85rem;
+    }
+}

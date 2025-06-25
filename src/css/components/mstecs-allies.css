@@ -1,0 +1,96 @@
+.mstecs-allies {
+    background: var(--color-gray-30);
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.mstecs-allies-title {
+    color: var(--color-blue-mstecs);
+    font-size: 3.5rem;
+    margin-bottom: -45px;
+    letter-spacing: -1px;
+}
+
+.mstecs-allies-logos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 40px 40px;
+    justify-items: center;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+.mstecs-ally-logo[alt="AWS Logo"] {
+    max-width: 150px;
+    max-height: 120px;
+}
+
+.mstecs-ally-logo[alt~="Huawei Logo"] {
+    max-width: 250px;
+    max-height: 180px;
+}
+
+.mstecs-ally-logo[alt~="Microsoft Logo"] {
+    max-width: 180px;
+    max-height: 80px;
+}
+
+.mstecs-ally-logo {
+    max-width: 400px;
+    max-height: 180px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    padding: 6px 12px;
+    box-sizing: border-box;
+}
+
+
+@media (max-width: 700px) {
+    .mstecs-allies-logos {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        gap: 28px 18px;
+        padding-top: 40px;
+    }
+    .mstecs-ally-logo {
+        max-width: 120px;
+        max-height: 50px;
+        padding: 8px 10px;
+    }
+    .mstecs-ally-logo[alt~="Microsoft Logo"] {
+        max-width: 90px;
+        max-height: 36px;
+    }
+    .mstecs-ally-logo[alt="AWS Logo"] {
+        max-width: 90px;
+        max-height: 36px;
+    }
+    .mstecs-ally-logo[alt~="Huawei Logo"] {
+        max-width: 120px;
+        max-height: 44px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .mstecs-allies-title {
+        font-size: 2.1rem;
+        margin-bottom: -25px;
+    }
+    .mstecs-allies-logos {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+        gap: 18px 0;
+        padding-top: 28px;
+    }
+    .mstecs-ally-log{
+        max-width: 90vw;
+        max-height: 40px;
+        padding: 6px 4vw;
+    }
+}

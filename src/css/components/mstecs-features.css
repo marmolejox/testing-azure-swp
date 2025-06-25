@@ -1,0 +1,429 @@
+@import url('../variable.css');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*  =========================================
+            |           Microsoft Cards             |
+            |           Stylish                     |
+            =========================================
+        */
+
+.mstecs-ft-microsoft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.mstecs-ft-microsoft-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.mstecs-ft-microsoft-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    grid-auto-flow: dense;
+}
+
+.mstecs-ft-microsoft-card-pretitle {
+    color: var(--color-gray-80);
+}
+
+.mstecs-ft-microsoft-card-title {
+    color: var(--color-blue-mstecs);
+    font-size: 30px;
+    font-weight: 900;
+    padding: 0;
+    margin: 0;
+}
+
+.mstecs-ft-microsoft-card-list {
+
+    text-align: left;
+    list-style: square inside;
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    font-size: 14px;
+
+    li {
+        margin-bottom: 8px;
+    }
+
+
+}
+
+.mstecs-ft-microsoft-card {
+    background-color: var(--color-gray-25);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    text-align: center;
+    padding: 30px;
+    max-width: 500px;
+    min-height: 400px;
+    height: auto;
+    overflow: hidden;
+}
+
+.mstecs-ft-microsoft-card-btn {
+    color: white;
+    background-color: var(--color-blue-mstecs);
+    border-radius: 64px;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.mstecs-ft-microsoft-card-btn:hover {
+    background-color: #0f5672;
+}
+
+.mstecs-ft-microsoft-card-icons {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 28px;
+    justify-items: center;
+    align-items: center;
+
+    img {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    .mstecs-ft-microsoft-cards {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding: 16px;
+    }
+
+    .mstecs-ft-microsoft-card {
+        max-width: 100%;
+        min-height: auto;
+        padding: 16px;
+    }
+
+    .mstecs-ft-microsoft-header {
+        flex-direction: column;
+        gap: 12px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+
+}
+
+
+/* ---------- End of Microsoft Cards ------------- */
+
+/*  =========================================
+    |           Office Cards                |
+    |           Stylish                     |
+    =========================================
+*/
+
+.mstecs-ft-office {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.mstecs-ft-office-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.mstecs-ft-office-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    grid-auto-flow: dense;
+}
+
+.mstecs-ft-office-card-pretitle {
+    color: var(--color-gray-80);
+}
+
+.mstecs-ft-office-card-title {
+    color: var(--color-blue-mstecs);
+    /* Puedes definir esta variable en tu :root */
+    font-size: 30px;
+    font-weight: 900;
+    padding: 0;
+    margin: 0;
+}
+
+.mstecs-ft-office-card-list {
+    text-align: left;
+    list-style: square inside;
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    font-size: 14px;
+
+    li {
+        margin-bottom: 8px;
+    }
+}
+
+.mstecs-ft-office-card {
+    background-color: var(--color-gray-25);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    text-align: center;
+    padding: 30px;
+    max-width: 500px;
+    min-height: 400px;
+    height: auto;
+    overflow: hidden;
+}
+
+.mstecs-ft-office-card-btn {
+    color: white;
+    background-color: var(--color-blue-mstecs);
+    border-radius: 64px;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.mstecs-ft-office-card-btn:hover {
+    background-color: #16528a;
+}
+
+.mstecs-ft-office-card-icons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 28px;
+    justify-items: center;
+    align-items: center;
+
+    img {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .mstecs-ft-office-header {
+        flex-direction: column;
+        gap: 12px;
+        font-size: 20px;
+        text-align: center;
+        word-wrap: break-word;
+        padding-top: 2rem;
+    }
+
+    .mstecs-ft-office-logo{
+        width: 350px;
+        height: auto;
+    }
+
+    .mstecs-ft-office-cards {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding: 16px;
+    }
+
+    .mstecs-ft-office-card {
+        max-width: 100%;
+        min-height: auto;
+        padding: 16px;
+    }
+
+
+
+}
+
+/* ---------- End of Office Cards ------------- */
+
+/*  =========================================
+    |           Google Cards                |
+    |           Stylish                     |
+    =========================================
+*/
+
+.mstecs-ft-google {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+.mstecs-ft-google-header {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+
+    img {
+        width: 680px;
+        height: 120px;
+        object-fit: contain;
+    }
+
+}
+
+.mstecs-ft-google-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    grid-auto-flow: dense;
+}
+
+.mstecs-ft-google-card {
+    background-color: var(--color-gray-25);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    text-align: center;
+    padding: 30px;
+    max-width: 500px;
+    min-height: 400px;
+    height: auto;
+    overflow: hidden;
+}
+
+.mstecs-ft-google-card-pretitle {
+    color: var(--color-gray-80);
+}
+
+.mstecs-ft-google-card-title {
+    color: var(--color-blue-mstecs);
+    font-size: 30px;
+    font-weight: 900;
+    padding: 0;
+    margin: 0;
+}
+
+.mstecs-ft-google-card-btn {
+    color: white;
+    background-color: var(--color-blue-mstecs);
+    border-radius: 64px;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.mstecs-ft-google-card-btn:hover {
+    background-color: #276ab7;
+}
+
+.mstecs-ft-google-card-list {
+    text-align: left;
+    list-style: square inside;
+    padding: 0;
+    margin: 0;
+    font-weight: 500;
+    font-size: 14px;
+
+    li {
+        margin-bottom: 8px;
+    }
+}
+
+
+.mstecs-ft-google-card-section-subtitle {
+    font-size: 14px;
+    color: var(--color-gray-70);
+    margin-bottom: 16px;
+}
+
+
+@media (max-width: 768px) {
+    .mstecs-ft-google-cards {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding: 16px;
+    }
+
+    .mstecs-ft-google-card {
+        max-width: 100%;
+        min-height: auto;
+        padding: 16px;
+    }
+
+    .mstecs-ft-google-header {
+
+        flex-direction: column;
+        gap: 12px;
+        font-size: 20px;
+        text-align: center;
+        word-wrap: break-word;
+        padding-top: 2rem;
+
+    }
+
+        .mstecs-ft-google-logo{
+        width: 350px;
+        height: auto;
+    }
+}
+
+/* ---------- End of Google Cards ------------- */

@@ -1,43 +1,355 @@
-<!DOCTYPE html>
-<html lang="en">
+<!-- 
+
+  CTECH-S INDEX.HTML
+
+  Author: Luis Gutierrez <lgutierrez@mstecs.com>
+  Date: 13/05/2025
+
+-->
+
+
+<!doctype html>
+<html class="no-js" lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="CTECH-S offers consulting and training on cloud platforms such as AWS, Google Cloud and CompTIA. With over 10 years of experience, we provide global solutions with certified engineers in multiple languages and time zones.">
-    <meta name="author" content="CTECH-S & MSTECS: Multi Cloud Group">
-    <meta property="og:title" content="CTECH-S">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ctech-s.com/">
-    <meta property="og:image" content="">
-    <meta property="og:image:alt" content="CTECH-S Homepage">
-    <title>CTECH-S</title>
-    <link rel="icon" href="./assets/ctechs/icons/branding/favicon.ico" type="image/svg+xml">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/responsive.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CTECH-S</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <meta name="description" content="CTECH-S | Leaders in cloud technologies. Contact sales today to explore how we can transform your digital strategy.">
+
+  <meta property="og:title" content="CTECH-S | Cloud Technology Solutions">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.ctech-s.coM">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="CTECH-S Logo – Bridging Innovation and Business">
+
+  <link rel="icon" href="./favicon.ico" sizes="any">
+  <link rel="icon" href="./icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
 
-    <body>
+  <!-- Header -->
+  <header class="ctechs-header">
 
-        <div id="header"></div>
+    <div class="ctechs-header-container">
+      <!-- Logo -->
+      <a href="index.html" class="ctechs-header-logo">
+        <img src="./assets/logos/ctech-s-logo.svg" alt="CTECH-S logo" class="logo-img">
+      </a>
+      <!-- Mobile Button -->
+      <button class="mobile-menu-toggle" aria-label="Menú" id="mobile-menu-toggle">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 12H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          <path d="M3 6H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          <path d="M3 18H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </button>
 
 
-        <main>
-            <a href="./mstecs/index.html">mstecs</a>
-        </main>
+
+      <!-- Navigation Menu -->
+      <nav class="ctechs-header-menu roboto-regular" id="menu">
+        <ul class="menu-links">
+          <li class="menu-item"><a href="#whoweare" class="menu-link" id="we-are-button"></a></li>
+          <li class="menu-item"><a href="./partners.html" class="menu-link" id="partners-button"></a></li>
+          <li class="menu-item"><a href="./ourservices.html" class="menu-link" id="services-button"></a></li>
+          <li class="menu-item"><a href="./mstecs.html" class="menu-link"><img src="./assets/logos/mstecs-logo.svg" alt="MSTECS logo" class="logo-button"></a></li>
+          <li class="menu-item"><a href="certifications.html" class="menu-link" id="certifications-button"></a></li>
+          <li class="menu-item"><a href="#contact-us" class="menu-link" id="contact-button"></a></li>
+          <li class="menu-item">
+            <select class="select-header-ctechs" id="language-select">
+              <option class="menu-link" value="es">Español</option>
+              <option class="menu-link" value="en">English</option>
+            </select>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+
+  </header>
+  <!-- End of Header -->
 
 
-        <div id="footer"></div>
+
+  <!-- Hero -->
+  <section class="ctechs-hero">
+    <div class="ctechs-hero-slider">
+      <!-- Slide 1 -->
+      <div class="ctechs-hero-slide active">
+        <div class="ctechs-hero-background">
+          <img src="./assets/img/Banner_WT_CTECH-S.png" alt="Office background" loading="lazy" width="1920" height="1080">
+        </div>
+        <div class="ctechs-hero-content">
+          <h1 class="ctechs-hero-title roboto-black" id="ctechs-hero-title"></h1>
+          <h2 class="ctechs-hero-subtitle roboto-regular" id="ctechs-hero-subtitle"></h2>
+          <p class="ctechs-hero-description roboto-regular" id="ctechs-hero-description"></p>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="ctechs-hero-slide">
+        <div class="ctechs-hero-background">
+          <img src="./assets/img/img_waves.png" alt="Certifications background" loading="lazy" width="1920"
+            height="1080">
+        </div>
+        <div class="ctechs-hero-content">
+          <h2 class="ctechs-hero-secondslide roboto-black" id="ctechs-hero-secondslide-firsttitle"></h2>
+          <h2 class="ctechs-hero-secondslide roboto-bold">+</h2>
+          <h2 class="ctechs-hero-secondslide roboto-black" id="ctechs-hero-secondslide-secondtitle"></h2>
+          <h2 class="ctechs-hero-secondslide roboto-bold">+</h2>
+          <h2 class="ctechs-hero-secondslide roboto-black" id="ctechs-hero-secondslide-thirdtitle"></h2>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation dots -->
+    <div class="ctechs-hero-dots">
+      <span class="hero-dot active" data-slide="0"></span>
+      <span class="hero-dot" data-slide="1"></span>
+    </div>
+
+  </section>
+  <!-- End of Hero -->
+
+  <!-- Who We Are -->
+  <section class="ctechs-whoweare-section" id="whoweare">
+    <!-- Div de fondo con imagen -->
+    <div class="ctechs-whoweare-background">
+      <img src="./assets/img/img_whitewaves.png" alt="Background waves" class="ctechs-whoweare-background-img"
+        loading="lazy">
+    </div>
+
+    <div class="ctechs-whoweare-container">
+      <h2 class="ctechs-whoweare-title roboto-black text-color-blue" id="whoweare-title">WHO . WE . ARE</h2>
+
+      <div class="ctechs-whoweare-content">
+        <div class="ctechs-whoweare-main-image">
+          <img src="./assets/img/img_cloud.png" alt="Cloud image" loading="lazy">
+        </div>
+
+        <div class="ctechs-whoweare-text-gallery">
+          <div class="ctechs-whoweare-text roboto-regular">
+            <p id="whoweare-desc"></p>
+          </div>
+
+          <div class="ctechs-whoweare-gallery">
+            <div class="ctechs-whoweare-gallery-item">
+              <img src="./assets/logos/logo_aws.png" alt="Aws">
+            </div>
+            <div class="ctechs-whoweare-gallery-item">
+              <img src="./assets/logos/logo_google.png" alt="Google">
+            </div>
+            <div class="ctechs-whoweare-gallery-item">
+              <img src="./assets/logos/logo_comptia.png" alt="Comptia">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End of Who We Are -->
+
+  <!-- Our Benefits -->
+  <section class="ctechs-ourbenefits-section">
+    
+    <!-- Divider -->
+    <div class="horizontal-line-separator">
+        <div class="lines-group">
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+            <div class="line line-3"></div>
+        </div>
+        <h2 class="section-title roboto-regular" id="ourbenefits-title"></h2>
+    </div>
 
 
-        <script type="module" src="./js/ctechs.js"></script>
 
-    </body>
 
-</html>
+
+    <section class="spacer-section" style="height: 50px; background-color: transparent;"></section>
+    
+
+    <div class="ctechs-ourbenefits-main roboto-regular">
+      <div class="ctechs-ourbenefits-box ctechs-ourbenefits-gray ">
+        <p id="personel-text"></p>
+      </div>
+      <div class="ctechs-ourbenefits-box ctechs-ourbenefits-gray">
+        <p id="attention-text"></p>
+      </div>
+      <div class="ctechs-ourbenefits-box ctechs-ourbenefits-gray ">
+        <p id="specialists-text"></p>
+      </div>
+    </div>
+
+    <div class="ctechs-ourbenefits-icons roboto-regular">
+      <div class="ctechs-ourbenefits-icon-item">
+        <div class="ctechs-ourbenefits-icon"><img src="./assets/icons/icon_acquisition.svg" alt="Icono 1" /></div>
+        <p id="acquisition"></p>
+      </div>
+      <div class="ctechs-ourbenefits-icon-item">
+        <div class="ctechs-ourbenefits-icon"><img src="./assets/icons/icon_real-time.svg" alt="Icono 2" /></div>
+        <p id="real-time"></p>
+      </div>
+      <div class="ctechs-ourbenefits-icon-item">
+        <div class="ctechs-ourbenefits-icon"><img src="./assets/icons/icon_dedicated.svg" alt="Icono 3" /></div>
+        <p id="dedicated"></p>
+      </div>
+      <div class="ctechs-ourbenefits-icon-item">
+        <div class="ctechs-ourbenefits-icon"><img src="./assets/icons/icon_continous.svg" alt="Icono 4" /></div>
+        <p id="continous"></p>
+      </div>
+      <div class="ctechs-ourbenefits-icon-item">
+        <div class="ctechs-ourbenefits-icon"><img src="./assets/icons/icon_high.svg" alt="Icono 5" /></div>
+        <p id="high-adaptability"></p>
+      </div>
+    </div>
+  </section>
+  <!-- End of Our Benefits -->
+
+      <!-- Spacer Section -->
+    <section class="spacer-section" style="height: 50px; background-color: transparent;"></section>
+    <section class="spacer-section" style="height: 50px; background-color: transparent;"></section>
+
+
+  <!-- Contact Us  -->
+  <section class="ctechs-contact-us-section" id="contact-us">
+    <div class="ctechs-contact-us-container">
+      <h2 class="ctechs-contact-us-title roboto-black" id="contactus-title"></h2>
+      <form class="ctechs-contact-us-form">
+        <div class="ctechs-contact-us-input-group">
+          <input type="text" class="ctechs-contact-us-input" id="contact-name-placeholder" placeholder="Your Name"
+            required>
+        </div>
+        <div class="ctechs-contact-us-input-group">
+          <input type="email" class="ctechs-contact-us-input" id="contact-email-placeholder" placeholder="Your Email"
+            required>
+        </div>
+        <div class="ctechs-contact-us-input-group">
+          <input type="tel" class="ctechs-contact-us-input" id="contact-phone-placeholder" placeholder="Phone" required>
+        </div>
+        <button type="submit" class="ctechs-contact-us-button" id="send-request">a</button>
+      </form>
+    </div>
+  </section>
+  <!-- End of Contact Us  -->
+
+  <!-- Global -->
+  <section class="ctechs-global-section">
+    <div class="ctechs-global-container">
+      <img src="./assets/img/img_global_new.jpg" alt="Global Image" class="ctechs-global-image" loading="lazy" width="1920">
+    </div>
+  </section>
+  <!-- End of Global -->
+
+  <!-- Floating Buttons Section -->
+    <section class="floating-buttons">
+        <button id="scroll-to-top" class="floating-button" aria-label="Scroll to Top">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 4L4 12H8V20H16V12H20L12 4Z" fill="currentColor" />
+            </svg>
+        </button>
+        <button id="email-button" class="floating-button" aria-label="Email">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4ZM20 6L12 11L4 6V18H20V6Z"
+                    fill="currentColor" />
+            </svg>
+        </button>
+    </section>
+
+  <!-- Footer -->
+  <footer class="ctechs-footer">
+    <div class="ctechs-footer-top">
+      <div class="ctechs-footer-logo-container">
+        <img src="./assets/logos/ctech-s-logo-dark.svg" alt="CTECH-S Logo" class="ctechs-footer-logo" width="250px">
+      </div>
+
+      <div class="ctechs-footer-addresses">
+        <div class="ctechs-footer-address roboto-regular">
+          <h3 class="roboto-bold">USA</h3>
+          <p>60 E Rio Salado</p>
+          <p>Parkway</p>
+          <p>Suite 900 Tempe, AZ</p>
+          <p>85281</p>
+          <p><img src="./assets/icons/phone.svg" alt="Phone Icon" width="15" height="15"> + 1 (480) 500 1207</p>
+          <p><img src="./assets/icons/mail.svg" alt="Mail Icon" width="15" height="15"> contact@ctech-s.com</p>
+        </div>
+
+        <div class="ctechs-footer-address roboto-regular">
+          <h3 class="roboto-bold">MÉXICO</h3>
+          <p>Avenida Del Arco</p>
+          <p>Bizantino #3443</p>
+          <p>Col. Paseo de los</p>
+          <p>Arcos</p>
+          <p>Culiacán, Sin. C.P</p>
+          <p>80180</p>
+          <p><img src="./assets/icons/phone.svg" alt="Phone Icon" width="15" height="15"> + 52 (55) 8880 0219</p>
+          <p><img src="./assets/icons/mail.svg" alt="Mail Icon" width="15" height="15"> ventas@ctech-s.com</p>
+        </div>
+
+        <div class="ctechs-footer-address roboto-regular">
+          <h3 class="roboto-bold">CANADA</h3>
+          <p>1 Dundas St. W. Suite</p>
+          <p>2500</p>
+          <p>Toronto Ontario</p>
+          <p>M5G1Z3</p>
+          <p><img src="./assets/icons/phone.svg" alt="Phone Icon" width="15" height="15"> + 1 (647) 699 8234</p>
+          <p><img src="./assets/icons/mail.svg" alt="Mail Icon" width="15" height="15"> contact@ctech-s.com</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="ctechs-footer-bottom">
+      <div class="ctechs-footer-social-icons roboto-bold">
+        <a href="https://www.facebook.com/MSTECSES/" target="_blank" class="social-icon">
+          <svg fill="#FFFFFF" height="30px" width="30px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-143 145 512 512" xml:space="preserve">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M169.5,357.6l-2.9,38.3h-39.3 v133H77.7v-133H51.2v-38.3h26.5v-25.7c0-11.3,0.3-28.8,8.5-39.7c8.7-11.5,20.6-19.3,41.1-19.3c33.4,0,47.4,4.8,47.4,4.8l-6.6,39.2 c0,0-11-3.2-21.3-3.2c-10.3,0-19.5,3.7-19.5,14v29.9H169.5z">
+              </path>
+            </g>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/company/mstecs-mx/" target="_blank" class="social-icon">
+          <svg fill="#FFFFFF" height="30px" width="30px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-143 145 512 512" xml:space="preserve">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M113,145c-141.4,0-256,114.6-256,256s114.6,256,256,256s256-114.6,256-256S254.4,145,113,145z M41.4,508.1H-8.5V348.4h49.9 V508.1z M15.1,328.4h-0.4c-18.1,0-29.8-12.2-29.8-27.7c0-15.8,12.1-27.7,30.5-27.7c18.4,0,29.7,11.9,30.1,27.7 C45.6,316.1,33.9,328.4,15.1,328.4z M241,508.1h-56.6v-82.6c0-21.6-8.8-36.4-28.3-36.4c-14.9,0-23.2,10-27,19.6 c-1.4,3.4-1.2,8.2-1.2,13.1v86.3H71.8c0,0,0.7-146.4,0-159.7h56.1v25.1c3.3-11,21.2-26.6,49.8-26.6c35.5,0,63.3,23,63.3,72.4V508.1z ">
+              </path>
+            </g>
+          </svg>
+        </a>
+      </div>
+
+      <div class="ctechs-footer-brands roboto-regular">
+        <a class="brand" style="color: white;" href="https://www.facebook.com/MSTECSES/" target="_blank" >@MSTECS México</a>
+        <a class="brand" style="color: white;" href="https://www.facebook.com/MstecsEn/" target="_blank">@MSTECS USA</a>
+      </div>
+
+  </footer>
+  <!-- End of Footer -->
+
+
+
+  <script src="js/language-loader.js"></script>
+  <script src="js/mobile-menu.js"></script>
+  <script src="js/slider.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/email-scroll.js" defer></script>
+
 </body>
 
 </html>

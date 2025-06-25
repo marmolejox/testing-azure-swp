@@ -1,0 +1,100 @@
+@import url('../variable.css');
+
+.mstecs-hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 7rem;
+    color: #fff;
+    overflow: hidden;
+}
+
+.mstecs-hero-img {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.mstecs-hero-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.mstecs-hero-title {
+    color: #352722;
+    position: relative;
+    z-index: 1;
+    font-size: 6rem;
+    margin-bottom: 2rem; /* reducido el espacio */
+    margin-top: 0; /* elimina espacio arriba del título */
+    max-width: 700px;
+    text-align: left;
+    line-height: 1.1;
+    letter-spacing: -1px;
+}
+
+.mstecs-hero-list {
+    color: #352722;
+    position: relative;
+    z-index: 1;
+    padding-left: 1.5rem;
+    max-width: 600px;
+    text-align: left;
+    margin: 0;
+    list-style: none;
+    list-style-position:outside;
+    padding:0;
+}
+
+.mstecs-hero-list-item {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    line-height: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .mstecs-hero {
+        padding: 2rem 1.5rem;
+        min-height: 45vh;
+        align-items: flex-start;
+        text-align: left;
+    }
+    .mstecs-hero-title {
+        font-size: 2rem;
+        max-width: 100%;
+        text-align: left;
+    }
+    .mstecs-hero-list {
+        font-size: 1.1rem;
+        max-width: 100%;
+        text-align: left;
+    }
+}
+
+@media (max-width: 600px) {
+    .mstecs-hero {
+        padding: 1.5rem 1rem;
+        min-height: 35vh;
+        align-items: flex-start;
+        text-align: left;
+    }
+    .mstecs-hero-title {
+        font-size: 1.4rem;
+        text-align: left;
+    }
+    .mstecs-hero-list {
+        text-align: left;
+    }
+    .mstecs-hero-list-item {
+        font-size: 1rem;
+    }
+}

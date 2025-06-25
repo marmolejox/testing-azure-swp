@@ -1,0 +1,148 @@
+@import url('../variable.css');
+
+.ctechs-ourbenefits-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.ctechs-ourbenefits-title {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 0; /* Minimum margin */
+    color: var(--color-black-90);
+    text-align: right;
+    white-space: normal;
+    max-width: 100%;
+}
+
+.ctechs-ourbenefits-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0; /* Minimum margin */
+}
+
+.ctechs-ourbenefits-lines {
+    display: flex;
+    gap: 0.4rem;
+}
+
+.ctechs-ourbenefits-line {
+    display: block;
+    height: 12px;
+    background-color: var(--color-blue-ctechs);
+    border-radius: 9px;
+}
+
+.ctechs-ourbenefits-line.line-1 {
+    width: 400px;
+}
+
+.ctechs-ourbenefits-line.line-2 {
+    width: 200px;
+}
+
+.ctechs-ourbenefits-line.line-3 {
+    width: 150px;
+}
+
+
+.ctechs-ourbenefits-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.ctechs-ourbenefits-box {
+    flex: 1 1 300px;
+    min-height: 150px;
+    padding: 5rem;
+    border-radius: 8px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.ctechs-ourbenefits-box.ctechs-ourbenefits-gray:hover {
+    background-color: var(--color-blue-ctechs);
+    color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+
+.span-blue{
+    color: var(--color-blue-ctechs);
+}
+
+.ctechs-ourbenefits-box p {
+    line-height: 1.4;
+}
+
+.ctechs-ourbenefits-gray {
+    background-color: var(--color-gray-30);
+    color: var(--color-black-50);
+    transition: background-color 0.4s ease, color 0.4s ease, text-align 0.4s ease;
+}
+
+.ctechs-ourbenefits-blue {
+    background-color: var(--color-blue-ctechs);
+    color: #fff;
+}
+
+.ctechs-ourbenefits-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1.5rem;
+}
+
+.ctechs-ourbenefits-icon-item {
+    flex: 1 1 200px;
+    max-width: 220px;
+    text-align: center;
+}
+
+.ctechs-ourbenefits-icon {
+    width: 120px;
+    height: 120px;
+    background-color: var(--color-gray-30);
+    border-radius: 100%;
+    margin: 0 auto 1rem;
+}
+
+.ctechs-ourbenefits-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.ctechs-ourbenefits-icon-item p {
+    font-size: 1rem;
+    line-height: 1.3;
+}
+
+@media (max-width: 768px) {
+    .ctechs-ourbenefits-header {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .ctechs-ourbenefits-lines {
+        display: none;
+    }
+
+    .ctechs-ourbenefits-title {
+        text-align: center;
+        font-size: 2rem;
+    }
+}

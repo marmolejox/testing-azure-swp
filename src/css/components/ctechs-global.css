@@ -1,0 +1,12 @@
+@import url('../variable.css');
+
+.ctechs-global-container {
+    margin: 0 auto;
+}
+
+
+.ctechs-global-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}

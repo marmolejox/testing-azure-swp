@@ -1,0 +1,139 @@
+.badge-display-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.badge-display-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 100%;
+    max-width: 1200px; 
+}
+
+.badge-row {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.badge-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 800px;
+    gap: 15px;
+}
+
+.badge-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--color-gray-25);
+    border-radius: 30px;
+    width: 600px;
+}
+
+.badge-logo {
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+}
+
+.badge-list {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.badge-img {
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Specific row configurations */
+.badge-row:nth-child(1) {
+    justify-content: space-between;
+}
+
+.badge-row:nth-child(2) {
+    justify-content: center;
+}
+
+.badge-row:nth-child(3),
+.badge-row:nth-child(4) {
+    justify-content: space-between;
+}
+
+/* Configuración especial para la fila 2 - logo horizontal */
+.badge-row:nth-child(2) .badge-group {
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Responsive design para móviles */
+@media (max-width: 768px) {
+    .badge-display-container {
+        gap: 30px;
+    }
+    
+    .badge-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    
+    .badge-card {
+        width: 100%;
+        max-width: 350px;
+        padding: 15px;
+    }
+    
+    .badge-logo {
+        width: 120px;
+    }
+    
+    .badge-img {
+        width: 120px;
+    }
+    
+    /* Resetear las configuraciones específicas de filas para móvil */
+    .badge-row:nth-child(1),
+    .badge-row:nth-child(2),
+    .badge-row:nth-child(3),
+    .badge-row:nth-child(4) {
+        justify-content: center;
+    }
+
+    /* En móvil, la fila 2 vuelve a ser vertical */
+    .badge-row:nth-child(2) .badge-group {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .badge-display-section {
+        padding: 10px;
+    }
+    
+    .badge-card {
+        max-width: 300px;
+        padding: 10px;
+    }
+    
+    .badge-logo {
+        width: 100px;
+    }
+    
+    .badge-img {
+        width: 100px;
+    }
+}

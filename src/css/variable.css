@@ -1,0 +1,75 @@
+/* 
+    Author: Luis Gutiérrez @ lguiterrez@mstecs.com
+    Date: 12/05/2025
+
+    Description:
+    This CSS file defines a set of custom properties (CSS variables) that represent the corporate colors for two entities: CTECH-S and MSTECS. These variables are declared under the :root selector, which makes them globally accessible throughout your CSS. 
+    The file centralizes the color definitions for the corporate branding of the two entities. This ensures consistency across the application or website when using these colors.
+
+    Usage:
+    background-color: var(--color-red-ctechs);
+    color: var(--color-gray-navbar);
+
+    This file acts as a single source of truth for all corporate colors, making it easier to manage and apply branding guidelines consistently.
+*/
+
+:root {
+    /* CTECH-S */
+    --color-red-ctechs: #E24336;
+    --color-orange-ctechs: #FA9300;
+    --color-blue-ctechs: #0066DB;
+    --color-gray-ctechs: #474747;
+    --color-white-ctechs: #EEEEEE;
+
+    /* MSTECS */
+    --color-yellow-mstecs: #FFC800;
+    --color-blue-mstecs: #00B1ED;
+    --color-red-mstecs: #FF0005;
+    --color-green-mstecs: #7FC70B;
+    --color-gray-mstecs: #E5E5E5;
+
+    /* GRAY PALETTE */
+    --color-gray-10: #fafafa;
+    --color-gray-20: #efefef;
+    --color-gray-25: #e7e7e7;
+    --color-gray-30: #dadada;
+    --color-gray-40: #c5c5c5;
+    --color-gray-50: #b0b0b0;
+    --color-gray-60: #9b9b9b;
+    --color-gray-70: #868686;
+    --color-gray-80: #717171;
+    --color-gray-90: #5c5c5c;
+    --color-gray-100: #474747;
+
+    /* BLACK PALETTE */
+    --color-black-10: #e0e0e0;
+    --color-black-20: #c2c2c2;
+    --color-black-30: #a3a3a3;
+    --color-black-40: #858585;
+    --color-black-50: #666666;
+    --color-black-60: #4d4d4d;
+    --color-black-70: #333333;
+    --color-black-80: #1a1a1a;
+    --color-black-90: #0d0d0d;
+    --color-black-100: #000000;
+}
+
+.text-color-blue {
+    color: var(--color-blue-ctechs);
+}
+
+.text-color-black {
+    color: var(--color-black-90);
+}
+
+.text-color-orange{
+    color: var(--color-orange-ctechs);
+}
+
+.text-biggest{
+    font-size: 4rem;
+}
+
+.text-color-primary{
+    color: var(--color-black-50);
+}

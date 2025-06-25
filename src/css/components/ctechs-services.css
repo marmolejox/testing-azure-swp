@@ -1,0 +1,72 @@
+@import url('../variable.css');
+
+.ctechs-services{
+    max-width: 2200px;
+    width: 100%;
+}
+
+.ctechs-services__card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #f0f0f0;
+    border-radius: 60px;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    padding-left: 150px;
+    padding-right: 150px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ctechs-services__card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Space between header and description */
+}
+
+.ctechs-services__card-header img {
+    margin-right: 15px; /* Space between icon and title */
+}
+
+.ctechs-services__title {
+    font-size: 2.5rem; /* Title size */
+    color: var(--color-blue-mstecs); /* Dark text color */
+}
+
+.ctechs-services__description {
+    font-size: 1.5rem; /* Description size */
+    color: #666; /* Gray text color */
+    line-height: 1.5; /* Improve readability */
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .ctechs-services__card {
+        width: 100%; /* Full width on smaller screens */
+        padding: 15px; /* Slightly increase padding */
+    }
+
+    .ctechs-services__card-header {
+        flex-direction: column; /* Stack icon and title vertically */
+        align-items: flex-start;
+    }
+
+    .ctechs-services__card-header img {
+        margin-bottom: 10px; /* Space below icon */
+    }
+
+    .ctechs-services__title{
+        padding: 0;
+        margin: 0;
+    }
+
+    .ctechs-services__description {
+        font-size: 1.2rem; /* Adjust font size for readability */
+        word-wrap: break-word; /* Prevent text from being cut off */
+        margin-left: 5px; /* Add some space from the edge */
+        margin-right: 5px; /* Add some space from the edge */
+    }
+}
